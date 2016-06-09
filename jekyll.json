@@ -7,9 +7,8 @@
       "network": "BRIDGE",
       "portMappings": [
         {
-          "hostPort": 80,
-          "containerPort": 80,
-          "protocol": "tcp"
+          "containerPort": 4000,
+          "hostPort": 0
         }
       ]
     }
@@ -22,18 +21,5 @@
   },
   "instances": 1,
   "cpus": 0.1,
-  "mem": 128,
-  "healthChecks": [
-    {
-      "protocol": "TCP",
-      "gracePeriodSeconds": 600,
-      "intervalSeconds": 30,
-      "portIndex": 0,
-      "timeoutSeconds": 10,
-      "maxConsecutiveFailures": 2
-    }
-  ],
-  "upgradeStrategy": {
-    "minimumHealthCapacity": 0
-  }
+  "mem": 128
 }

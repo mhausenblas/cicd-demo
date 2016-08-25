@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Hello Stockholm"
-date:   2016-08-25 12:48:02 +0100
-categories: jekyll update
----
-
-Hello Stockholm!
